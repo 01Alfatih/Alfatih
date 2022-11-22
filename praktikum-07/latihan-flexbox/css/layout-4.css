@@ -1,0 +1,61 @@
+.countainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Kotak1{
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    background-color: yellow;
+    flex: 1 1 auto;
+    margin: 20px;
+}
+
+.Kotak2{
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    background-color: red;
+    flex: 3 1 auto;
+    margin: 20px;
+}
+
+.countainer-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Kelas1{
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    background-color: goldenrod;
+    flex: 1 1 auto;
+    margin: 20px;
+}
+
+.Kelas2{
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    background-color:cornflowerblue;
+    flex: 3 1 auto;
+    margin: 20px;
+}
+
+.Kelas3{
+    width: auto;
+    height: 500px;
+    padding: 20px;
+    background-color:cyan;
+    flex: 1 1 auto;
+    margin: 20px;
+}
+
+.countainer-3{
+    width: auto;
+    height: 200px;
+    margin: 20px;
+    background-color: blue;
+}

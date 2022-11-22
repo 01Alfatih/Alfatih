@@ -1,0 +1,38 @@
+/* reset pading dan margin */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    width: 5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    padding: 0.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+
+nav ul li{
+    margin: 0 1rem;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
