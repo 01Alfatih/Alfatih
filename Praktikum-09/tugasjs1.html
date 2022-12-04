@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <form action="">
+        <label for="angka1">Angka Pertama</label><input type="text" id="angka1">
+        <br><br>
+        <label for="angka2">Angka Kedua</label><input type="text" id="angka2">
+        <br><br>
+        <input type="button" value="+" onclick="penjumlahan()">
+        <input type="button" value="-" onclick="penngurangan()">
+        <input type="button" value="x" onclick="perkalian()">
+        <input type="button" value=":" onclick="pembagian()">
+        <br><br>
+        <label for="Hasil">Hasil</label><input type="text" id="Hasil">
+    </form>
+    <script>
+        let angka_a = document.getElementById("angka1").value;
+        let angka_b = document.getElementById("angka2").value;
+
+        function penjumlahan(){
+            let penjumlahan1 = angka_a + angka_b
+            document.getElementById("Hasil").value="" +penjumlahan1;
+        }
+        
+        function pengurangan(){
+            let pengurangan1 = angka_a - angka_b
+            document.getElementById("Hasil").value="" +pengurangan1;
+        }
+        
+        function pembagian(){
+            let pembagian1 = angka_a * angka_b
+            document.getElementById("Hasil").value="" +pembagian1;
+        }
+
+        function perkalian(){
+            let perkalian1 = angka_a / angka_b
+            document.getElementById("Hasil").value= "" +perkalian1 ;
+        }
+    </script>
+
+</body>
+</html>

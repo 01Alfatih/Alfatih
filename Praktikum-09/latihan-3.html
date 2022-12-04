@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 3</title>
+</head>
+<body>
+    <form action="">
+        <label for="masuk">Jam Masuk :</label><input type="text" id="masuk">
+        <br><br>
+        <label for="keluar">Jam Keluar :</label><input type="text" id="keluar">
+        <br><br>
+        <input type="button" value="hitung" onclick="biaya_parkir()">
+        <br><br>
+        <label for="biaya">Biaya :</label><input type="text" id="biaya">
+    </form>
+    <script>
+        function biaya_parkir(){
+            let Jam_masuk = document.getElementById("masuk").value;
+            let Jam_keluar = document.getElementById("keluar").value;
+            let Total = Jam_keluar - Jam_masuk;
+            
+
+            let tarif_awal = 3000;
+            let selisih_waktu = Math.round(Total - 2)
+            let tarif_lanjut = selisih_waktu * 1000;
+
+            let tarif_total = tarif_awal + tarif_lanjut
+            document.getElementById("biaya").value ="Rp ." + tarif_total;
+        }
+    </script>
+</body>
+</html>

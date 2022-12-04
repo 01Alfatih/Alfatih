@@ -1,0 +1,52 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction:column;
+    margin: 0;
+}
+
+#bebas{
+    display: flex;
+    flex: 1;
+}
+
+#bebas > article{
+    flex: 1;
+    order: 1;
+}
+
+#bebas > aside {
+    flex: 0 0 50vw;
+}
+
+
+#bebas > aside{
+    background: pink;
+    order: 2;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    
+    height: 100px;
+}
+
+img{
+    background-color: blueviolet;
+    width: 100px;
+}
+
+header, footer{
+    background: khaki;
+    height: 20vh;
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+    margin: 2vw;}

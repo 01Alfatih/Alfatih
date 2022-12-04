@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 1</title>
+</head>
+<body>
+    <h1>Menghitung luas dan keliling lingkaran</h1>
+    <!-- span#pi -->
+    <span id="pi"></span>
+    <br><br>
+    <span id="jari"></span>
+    <br><br>
+    <span id="luas"></span>
+    <br><br>
+    <span id="keliling"></span>
+    <script>
+         // Buat Variabel Phi
+        const phi = 3.14;
+         // Buat Variabel Jari-Jari
+        let r = 10;
+        let luas = phi * r * r;
+        let keliling = phi * (2*r);
+
+        // Tangkap Element dengan ID pi, lalu masukkan konten nya
+        document.getElementById('pi').innerHTML = "Phi : " + phi;
+        //Tangkap Element dengan ID jari, lalu masukkan konten nya
+        document.getElementById("jari").innerHTML = "Jari-jari : " + r;
+        //
+        document.getElementById("luas").innerHTML = "Luas : " + luas;
+        //
+        document.getElementById('keliling').innerHTML = "Keliling : " + keliling;
+    </script>
+
+</body>
+</html>
