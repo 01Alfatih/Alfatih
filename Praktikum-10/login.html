@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="form">
+        <label for="username">username</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="password">pasaword</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <button type="submit" id="login">Login</button>
+    </form>
+
+    <p>NB</p>
+    <p>username : admin</p>
+    <p>password : integrity</p>
+
+<script>
+    let kirim = document.getElementById("login");
+    kirim.addEventListener("click", function(){
+        let inp_nama = document.getElementById("username").value;
+        let inp_pass = document.getElementById("password").value;
+
+        if (inp_nama == "admin" && inp_pass == "integrity") {
+            form.setAttribute("action", "dashboard.html");
+            window.alert("Login Berhasil");
+          } else {
+            window.alert("Login Gagal");
+          }
+          console.log(inp_pass + inp_nama);
+    })
+</script>
+</body>
+</html>

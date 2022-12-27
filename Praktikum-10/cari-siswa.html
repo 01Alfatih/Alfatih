@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 10</title>
+    <style>
+        div{
+            width: 300px;
+            border: 25px solid green;
+            padding: 25px;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="frm_cari">
+        <label for="cari">Cari siswa :</label>
+        <input type="text" name="Cari" size="30" id="cari">
+        <input type="button" value="Go" name="Proses_cari" id="go">
+    </form>
+    <hr>
+    <div>
+        Nama yang Anda cari : <span id="kata_cari"></span>
+    </div>
+    <script>
+        let buttonGo = document.getElementById("go");
+
+        buttonGo.addEventListener("click", function(){
+            let formCari = document.getElementById("frm_cari");
+            let nama = formCari.cari.value; //document.getElementById("cari").value;
+
+            if (nama == "Alfatih"|| nama == "ALFATIH".toLowerCase() || nama == "Alfatih".toUpperCase){
+                console.log("Alfatih ada di dalam database");
+                document.getElementById("kata_cari").innerHTML = nama;
+                document.getElementById("kata_cari").style = 'color: blue';
+            }
+            else{
+                console.log(`${nama} Tidak ditemukan`); //string interpolision
+                document.getElementById("kata_cari").innerHTML = nama;
+                document.getElementById("kata_cari").style = 'color: blue';
+            }
+        })
+    </script>
+</body>
+</html>
